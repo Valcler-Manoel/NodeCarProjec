@@ -1,150 +1,456 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Concessionária</title>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap" rel="stylesheet">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <link rel="stylesheet" href="css/style.css">
+  <title>Bike Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <!--  animejs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <!--  animejs -->
+  <!--  owl css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <!--  owl css -->
+
+  <!--  jquery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <!--  jquery -->
+
 </head>
+
 <body>
-    <div id="container">
-        <div id="navbar">
-            <ul>
-                <li><a href="/">Início</a></li>
-                <li><a href="/produtos">Produtos</a></li>
-                <li><a href="/sobre">Sobre</a></li>
-            </ul>
-            <div id="logo">
-                <img src="Images/logocar.png" alt="">
+  <div id="navbar">
+    <ul>
+        <li><a href="/">Início</a></li>
+        <li><a href="/produtos">Produtos</a></li>
+        <li><a href="/sobre">Sobre</a></li>
+    </ul>
+    <div id="logo">
+        <img src="images/logocar.png" alt="">
+    </div>
+    <ol>
+        <li><a href="/contato">Contato</a></li>
+        <li><a href="#">Privacidade</a></li>
+        <li><a href="/login">Login</a></li>
+    </ol>
+</div>
+
+
+  <section class="latest top">
+    <div class="scontainer">
+      <div class="heading">
+        <h1>Veículos Populares</h1>
+        <div class="lines flex1">
+          <div class="line"> <i class="fas fa-circle"></i> </div>
+          <div class="line line2"> <i class="fas fa-circle"></i> </div>
+        </div>
+      </div>
+
+      <div class="content grid top">
+        <div class="box">
+          <div class="img">
+            <img src="images/car-1.png" alt="">
+            <div class="flex1">
+              <i class="fas fa-heart"></i>
             </div>
-            <ol>
-                <li><a href="/contato">Contato</a></li>
-                <li><a href="#">Privacidade</a></li>
-                <li><a href="/login">Login</a></li>
-            </ol>
+          </div>
+
+          <div class="detalis">
+            <h3>Mercedes SL500</h3>
+            <p>$78,678</p>
+            <h2>$699 <span>$799</span> </h2>
+            <button>Alugue</button>
+          </div>
         </div>
-        <div id="sideImg">
-          <section class="home" id="home">
+        <div class="box">
+          <div class="img">
+            <img src="images/car-2.png" alt="">
+            <div class="flex1">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
 
-            
-            <img data-speed="5" class="home-parallax" src="Images/deloreanp.png" alt="">
-        
-        </section>
+          <div class="detalis">
+            <h3>MG HS</h3>
+            <p>$42,900</p>
+            <h2>$699 <span>$799</span> </h2>
+            <button>Alugue</button>
+          </div>
         </div>
-        <div id="contentSection">
+        <div class="box">
+          <div class="img">
+            <img src="images/car-3.png" alt="">
+            <div class="flex1">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="detalis">
+            <h3>Yandex</h3>
+            <p>$17,800</p>
+            <h2>$699 <span>$799</span> </h2>
+            <button>Alugue</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="images/car-4.png" alt="">
+            <div class="flex1">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="detalis">
+            <h3>Audi EQC Eletric</h3>
+            <p>$87,899</p>
+            <h2>$699 <span>$799</span> </h2>
+            <button>Alugue</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="images/car-5.png" alt="">
+            <div class="flex1">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="detalis">
+            <h3>Kia Sportage</h3>
+            <p>$24,999</p>
+            <h2>$699 <span>$799</span> </h2>
+            <button>Alugue</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="images/l6.png" alt="">
+            <div class="flex1">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="detalis">
+            <h3>Yamaha ZLT</h3>
+            <p>$27,899</p>
+            <h2>$699 <span>$799</span> </h2>
+            <button>Alugue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='far fa-chevron-left'></i>", "<i class='far fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+
+  <section class="Popular latest slider">
+    <div class="scontainer">
+      <div class="heading">
+        <h1>Motos Populares</h1>
+        <div class="lines flex1">
+          <div class="line"> <i class="fas fa-circle"></i> </div>
+          <div class="line line2"> <i class="fas fa-circle"></i> </div>
+        </div>
+      </div>
+
+
+      <div class="owl-carousel owl-theme">
+        <div class="box">
+          <div class="img">
+            <img src="images/l1.png" alt="">
+            <div class="flex1">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="detalis">
+            <h3>Aerion Carrbo Helmet</h3>
+            <p>(Fashion , Twin Disc)</p>
+            <h2>$299 <span>$399</span> </h2>
+            <button>Alugue</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="images/l2.png" alt="">
+            <div class="flex1">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="detalis">
+            <h3>Aerion Carrbo Helmet</h3>
+            <p>(Fashion , Twin Disc)</p>
+            <h2>$259 <span>$399</span> </h2>
+            <button>Alugue</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="images/l3.png" alt="">
+            <div class="flex1">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="detalis">
+            <h3>Aerion Carrbo Helmet</h3>
+            <p>(Fashion , Twin Disc)</p>
+            <h2>$549 <span>$799</span> </h2>
+            <button>Alugue</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="images/l4.png" alt="">
+            <div class="flex1">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="detalis">
+            <h3>Aerion Carrbo Helmet</h3>
+            <p>(Fashion , Twin Disc)</p>
+            <h2>$699 <span>$799</span> </h2>
+            <button>Alugue</button>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='far fa-chevron-left'></i>", "<i class='far fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+
+
+
+
+  <section class="latest Assesories top">
+    <div class="scontainer">
+      <div class="heading">
+        <h1>Acessórios</h1>
+        <div class="lines flex1">
+          <div class="line"> <i class="fas fa-circle"></i> </div>
+          <button>Até 50% OFF</button>
+          <div class="line line2"> <i class="fas fa-circle"></i> </div>
+        </div>
+      </div>
+
+      <div class="content grid top">
+        <div class="box">
+          <div class="img">
+            <img src="images/a1.png" alt="">
+            <div class="flex1">
+              <label>50%</label>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="detalis">
+            <h3>Capacete ZLT2</h3>
+            <p>(Segurança, Esportivo)</p>
+            <h2>$400 <span>$800</span> </h2>
+            <button>Compre</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="images/a2.png" alt="">
+            <div class="flex1">
+              <label>30%</label>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="detalis">
+            <h3>Luvas esportivas</h3>
+            <p>(Segurança, Esportivo)</p>
+            <h2>$420 <span>$600</span> </h2>
+            <button>Compre</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="images/a3.png" alt="">
+            <div class="flex1">
+              <label>50%</label>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="detalis">
+            <h3>Jaqueta esportiva</h3>
+            <p>(Segurança , Esportivo)</p>
+            <h2>$600 <span>$1200</span> </h2>
+            <button>Compre</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="images/a4.png" alt="">
+            <div class="flex1">
             
-<section class="icons-container">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
 
-  <div class="icons">
-      <i class="fas fa-home"></i>
-      <div class="content">
-          <h3>150+</h3>
-          <p>marcas</p>
-      </div>
-  </div>
+          <div class="detalis">
+            <h3>Botas Esportivas</h3>
+            <p>(Segurança)</p>
+            <h2>$199 <span></span> </h2>
+            <button>Buy Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="images/a5.png" alt="">
+            <div class="flex1">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
 
-  <div class="icons">
-      <i class="fas fa-car"></i>
-      <div class="content">
-          <h3>4779+</h3>
-          <p>carros vendidos</p>
-      </div>
-  </div>
+          <div class="detalis">
+            <h3>Jaqueta</h3>
+            <p>(Segurança)</p>
+            <h2>$99 <span></span> </h2>
+            <button>Buy Now</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="images/a6.png" alt="">
+            <div class="flex1">
+              <label>10%</label>
 
-  <div class="icons">
-      <i class="fas fa-users"></i>
-      <div class="content">
-          <h3>327+</h3>
-          <p>clientes satisfeitos</p>
-      </div>
-  </div>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
 
-  <div class="icons">
-      <i class="fas fa-car"></i>
-      <div class="content">
-          <h3>1558+</h3>
-          <p>novos carros</p>
+          <div class="detalis">
+            <h3>Botas</h3>
+            <p>(Segurança)</p>
+            <h2>$79 <span>$89</span> </h2>
+            <button>Buy Now</button>
+          </div>
+        </div>
       </div>
-  </div>
+    </div>
+  </section>
+
+
+
+
+  <script>
+    anime({
+      targets: '.ani_image',
+      translateX: 70,
+      loop: true,
+      direction: 'alternate',
+      easing: 'easeInOutSine'
+    });
+  </script>
+
+<footer>
+  <section class="footer" id="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Nossos locais</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Brasil </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> japão </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> frança </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> rússia </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Estados Unidos </a>
+        </div>
+
+        <div class="box">
+            <h3>links rápidos</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Início </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Veículos </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Serviços </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Categorias </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Avaliações </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Contato </a>
+        </div>
+
+        <div class="box">
+            <h3>informações de contato</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> cmccompanyservices@gmail.com </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Fortaleza, Brazil - 400104 </a>
+        </div>
+
+        <div class="box">
+            <h3>Informações de contato</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+        </div>
+
+    </div>
+
 
 </section>
-        </div>
-        <div id="pagination">
-            <div id="line"></div>
-            <h2>01</h2>
-            <h2>02</h2>
-            <h2>03</h2>
-        </div>
-        <div id="socialLinks">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-youtube"></i>
-            <div id="line"></div>
-        </div>
-
-        
-    </div>
-    
-
-
-    <section class="footer" id="footer">
-
-        <div class="box-container">
-    
-            <div class="box">
-                <h3>Nossos locais</h3>
-                <a href="#"> <i class="fas fa-map-marker-alt"></i> Brasil </a>
-                <a href="#"> <i class="fas fa-map-marker-alt"></i> japão </a>
-                <a href="#"> <i class="fas fa-map-marker-alt"></i> frança </a>
-                <a href="#"> <i class="fas fa-map-marker-alt"></i> rússia </a>
-                <a href="#"> <i class="fas fa-map-marker-alt"></i> Estados Unidos </a>
-            </div>
-    
-            <div class="box">
-                <h3>links rápidos</h3>
-                <a href="#"> <i class="fas fa-arrow-right"></i> Início </a>
-                <a href="#"> <i class="fas fa-arrow-right"></i> Veículos </a>
-                <a href="#"> <i class="fas fa-arrow-right"></i> Serviços </a>
-                <a href="#"> <i class="fas fa-arrow-right"></i> Categorias </a>
-                <a href="#"> <i class="fas fa-arrow-right"></i> Avaliações </a>
-                <a href="#"> <i class="fas fa-arrow-right"></i> Contato </a>
-            </div>
-    
-            <div class="box">
-                <h3>informações de contato</h3>
-                <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
-                <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
-                <a href="#"> <i class="fas fa-envelope"></i> cmccompanyservices@gmail.com </a>
-                <a href="#"> <i class="fas fa-map-marker-alt"></i> Fortaleza, Brazil - 400104 </a>
-            </div>
-    
-            <div class="box">
-                <h3>Informações de contato</h3>
-                <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
-                <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
-                <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
-                <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
-                <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
-            </div>
-    
-        </div>
-    
-    
-    </section>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    
-    <script src="js/script.js"></script>
+ </footer>
 
 </body>
+
 </html>
