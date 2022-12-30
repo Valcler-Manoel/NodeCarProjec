@@ -1,4 +1,4 @@
-# NodeCarProjec
+# NodeCarProject
 »»»»»»»»»»»»» Repositório destinado para a disciplica de Programação WEB 1 ««««««««««««« <br />
 ◉ Instale as dependências do programa para poder inicializá-lo.<br />
 ◉ Inicie o projeto digitando: "npm start".
